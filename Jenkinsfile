@@ -1,16 +1,19 @@
 pipeline {
     agent any
-        stage (init) {
+    stages {
+        stage('init') {
             steps {
                 echo "this is the jenkins pipeline by using DSl"
             }
+
         }
-        stage (buils) {
+        
+        stage ('buils') {
             steps {
                 echo "this is the build stage"
             }
         }
      
-                
+    }        
         
 }
